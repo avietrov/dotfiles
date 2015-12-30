@@ -1,10 +1,14 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig:
-        path: gitconfig
-        create: false
-        relink: false
-        force: false
+    ~/.gitconfig: gitconfig
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
+    ~/.zsh: zsh/
+    ~/.zshrc: zshrc
+    ~/.vifm: vifm/
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
 
 
