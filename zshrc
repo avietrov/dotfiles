@@ -24,4 +24,4 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
 source $HOME/.zsh/exports.sh
 source $HOME/.zsh/functions.sh
-source $HOME/.extra
+source $HOME/.extra.sh
