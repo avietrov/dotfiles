@@ -28,3 +28,17 @@ function cdf() {
         echo 'No Finder window found' >&2
     fi
 }
+
+function notify() {
+	title='Done'
+	message=' '
+	if [ "$1" != "" ]; then
+		message="$1"
+	fi
+
+	if [ "$2" != "" ]; then
+		title="$2"
+	fi
+
+	osascript -e "display notification \"$message\" with title \"$title\""
+}
