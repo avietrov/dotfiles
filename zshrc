@@ -4,8 +4,9 @@ export UPDATE_ZSH_DAYS=14
 
 plugins=(git osx scala maven activator z)
 
-ZSH_THEME="bureau"
+ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
+ZSH_CUSTOM=$HOME/.zshcustom/
 
 CASE_SENSITIVE="false"
 HYPHEN_INSENSITIVE="false"
