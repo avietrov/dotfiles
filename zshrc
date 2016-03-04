@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=14
 
-plugins=(git osx scala maven activator z)
+plugins=(git osx scala mvn activator z)
 
 ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
@@ -25,3 +25,4 @@ source $HOME/.zsh/aliases.sh
 source $HOME/.zsh/exports.sh
 source $HOME/.zsh/functions.sh
 source $HOME/.extra.sh
+
