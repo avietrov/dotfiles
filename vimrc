@@ -44,6 +44,7 @@ set noeol
 """"" BEHAVIOR """""
 
 set tabstop=2			" Make tabs as wide as two spaces
+set shiftwidth=2
 set hlsearch 			" Highlight searches
 set ignorecase 		" Ignore case of searches
 set incsearch 		" Highlight dynamically as pattern is typed
@@ -51,6 +52,7 @@ set laststatus=2 	" Always show status line
 set noerrorbells 	" Disable error bells
 set ruler 				" Show the cursor position
 set showcmd 			" Show incomplete commands
+set expandtab
 
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
