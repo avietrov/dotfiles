@@ -18,3 +18,4 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias reload="exec $SHELL -l"
 
 alias mvn="mvn-color"
+alias cutt="cut -c1-120"
