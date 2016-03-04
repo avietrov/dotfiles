@@ -8,6 +8,7 @@
     ~/.zshrc: zshrc
     ~/.vifm: vifm/
     ~/.zshcustom: zshcustom/
+    "/Users/avi/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings": "Preferences.sublime-settings"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
