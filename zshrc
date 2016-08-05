@@ -26,3 +26,5 @@ source $HOME/.zsh/exports.sh
 source $HOME/.zsh/functions.sh
 source $HOME/.extra.sh
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
