@@ -1,9 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "vifm/colors"]
-	path = vifm/colors
-	url = https://github.com/vifm/vifm-colors.git
 [submodule "pure"]
 	path = pure
 	url = https://github.com/sindresorhus/pure.git

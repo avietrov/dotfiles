@@ -6,7 +6,6 @@
     ~/.vimrc: vimrc
     ~/.zsh: zsh/
     ~/.zshrc: zshrc
-    ~/.vifm: vifm/
     ~/.zshcustom: zshcustom/
 
 - shell:
