@@ -17,10 +17,5 @@
 	changed = green
 	untracked = cyan
 
-[user]
-	email = avietrov@testfabrik.com
-	name = Anton Vietrov
-[branch]
-	autosetuprebase = always
 [push]
 	default = simple
