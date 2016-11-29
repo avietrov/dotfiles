@@ -1,28 +1,22 @@
 set nocompatible
-filetype off                  " required for Vundle
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Plugins
+call plug#begin('~/.config/nvim/plugged')
 
-" Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
+Plug 'altercation/vim-colors-solarized'
+Plug 'mattn/emmet-vim'
+Plug 'kien/ctrlp.vim'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'kchmck/vim-coffee-script'
+Plug 'groenewege/vim-less'
+Plug 'derekwyatt/vim-scala'
 
-" Vundle plugins
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'mattn/emmet-vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'groenewege/vim-less'
-Plugin 'derekwyatt/vim-scala'
+call plug#end()
 
-call vundle#end()
 filetype plugin indent on
 
 """"" LOOK AND FEEL """""

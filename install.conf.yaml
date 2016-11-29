@@ -4,6 +4,7 @@
     ~/.gitconfig: gitconfig
     ~/.gemrc: gemrc
     ~/.pip: pip/
+    ~/.config/nvim: nvim
     ~/.zsh: zsh/
     ~/.zshrc: zshrc
     ~/.zshcustom: zshcustom/
