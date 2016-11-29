@@ -2,6 +2,7 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.pip: pip/
     ~/.zsh: zsh/
     ~/.zshrc: zshrc
     ~/.zshcustom: zshcustom/

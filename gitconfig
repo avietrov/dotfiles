@@ -19,3 +19,6 @@
 
 [push]
 	default = simple
+[user]
+	name = Anton Vietrov
+	email = avietrov@yahoo.de
