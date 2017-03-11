@@ -3,15 +3,11 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-set runtimepath+=/Users/avietrov/.config/nvim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=$HOME/.config/nvim/dein/repos/github.com/Shougo/dein.vim
 
-" Required:
 if dein#load_state('$HOME/.config/nvim/dein')
   call dein#begin('$HOME/.config/nvim/dein')
 
-  " Let dein manage dein
-  " Required:
   call dein#add('$HOME/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
@@ -28,17 +24,14 @@ if dein#load_state('$HOME/.config/nvim/dein')
 
 
   " UI
-  call dein#add('chriskempson/base16-vim')
-  call dein#add('mhartington/oceanic-next')
+  call dein#add('morhetz/gruvbox')
   call dein#add('bling/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
 
-  " Required:
   call dein#end()
   call dein#save_state()
 endif
 
-" Required:
 filetype plugin indent on
 syntax enable
 
@@ -48,8 +41,9 @@ filetype plugin indent on
 
 """"" LOOK AND FEEL """""
 set termguicolors
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+set background=dark
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 
 set number 			" Enable line numbers
 set cursorline 	" Highlight current line
@@ -89,4 +83,15 @@ inoremap <silent><expr> <TAB>
 
 """"" CONFIG """""
 autocmd Filetype gitcommit setlocal spell textwidth=80
+
+"" NEOMAKE
+let g:neomake_python_flake8_maker = {
+    \ 'args': ['--format=default'],
+    \ 'errorformat':
+        \ '%E%f:%l: could not compile,%-Z%p^,' .
+        \ '%A%f:%l:%c: %t%n %m,' .
+        \ '%A%f:%l: %t%n %m,' .
+        \ '%-G%.%#',
+    \ }
+let g:neomake_python_enabled_makers = ['flake8']
 
