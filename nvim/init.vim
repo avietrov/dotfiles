@@ -24,7 +24,7 @@ if dein#load_state('$HOME/.config/nvim/dein')
 
 
   " UI
-  call dein#add('morhetz/gruvbox')
+  call dein#add('chriskempson/base16-vim')
   call dein#add('bling/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
 
@@ -40,10 +40,10 @@ syntax enable
 filetype plugin indent on
 
 """"" LOOK AND FEEL """""
-set termguicolors
-set background=dark
-colorscheme gruvbox
-let g:airline_theme='gruvbox'
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 set number 			" Enable line numbers
 set cursorline 	" Highlight current line

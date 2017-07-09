@@ -6,6 +6,7 @@
     ~/.gemrc: gemrc
     ~/.pip: pip/
     ~/.config/nvim: nvim
+    ~/.config/base16-shell: base16-shell
     ~/.zsh: zsh/
     ~/.zshrc: zshrc
     ~/.zshcustom: zshcustom/
