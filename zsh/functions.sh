@@ -8,6 +8,17 @@ function startZinc() {
  fi
 }
 
+function template() {
+    name=$1
+    file="$TEMPLATES_HOME/$name.md"
+    if [ -r $file ]; then
+      cat $file | pbcopy; echo "template $name is in your pastebin."
+    else
+      echo "template $name not found. Expected $file."
+    fi
+}
+
+
 function man() {
     env \
     LESS_TERMCAP_mb=$(printf "\e[1;31m") \

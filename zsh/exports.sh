@@ -1,5 +1,6 @@
 export EDITOR='vim';
 export JAVA_HOME=$(/usr/libexec/java_home)
+export TEMPLATES_HOME="$HOME/Documents/templates"
 
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
