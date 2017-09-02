@@ -20,3 +20,4 @@ alias reload="exec $SHELL -l"
 
 alias mvn="mvn-color"
 alias cutt="cut -c1-120"
+alias zkube="zkubectl"

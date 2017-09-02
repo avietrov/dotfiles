@@ -11,22 +11,20 @@ if dein#load_state('$HOME/.config/nvim/dein')
   call dein#add('$HOME/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
   call dein#add('benekastah/neomake')
   call dein#add('scrooloose/nerdtree')
-  call dein#add('Shougo/deoplete.nvim')
 
   " Git
-  call dein#add('tpope/vim-fugitive')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
 
-
   " UI
   call dein#add('chriskempson/base16-vim')
-  call dein#add('bling/vim-airline')
+  call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
+
+  " Go
+  call dein#add('fatih/vim-go')
 
   call dein#end()
   call dein#save_state()
@@ -36,8 +34,6 @@ filetype plugin indent on
 syntax enable
 
 "End dein Scripts-------------------------
-
-filetype plugin indent on
 
 """"" LOOK AND FEEL """""
 if filereadable(expand("~/.vimrc_background"))
@@ -51,7 +47,6 @@ set gdefault		" Add the g flag to search/replace by default
 set backspace=indent,eol,start " Allow backspace in insert mode
 
 """"" BEHAVIOR """""
-
 set tabstop=2			" Make tabs as wide as two spaces
 set shiftwidth=2
 set hlsearch 			" Highlight searches
@@ -72,26 +67,7 @@ let g:python3_host_prog='/usr/local/bin/python3'
 
 """"" KEY MAPPINGS """""
 map <c-n>t :NERDTreeToggle<CR>
-inoremap <silent><expr> <TAB>
-    \ pumvisible() ? "\<C-n>" :
-    \ <SID>check_back_space() ? "\<TAB>" :
-    \ deoplete#mappings#manual_complete()
-    function! s:check_back_space() abort "{{{
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-    endfunction"}}}
 
 """"" CONFIG """""
 autocmd Filetype gitcommit setlocal spell textwidth=80
-
-"" NEOMAKE
-let g:neomake_python_flake8_maker = {
-    \ 'args': ['--format=default'],
-    \ 'errorformat':
-        \ '%E%f:%l: could not compile,%-Z%p^,' .
-        \ '%A%f:%l:%c: %t%n %m,' .
-        \ '%A%f:%l: %t%n %m,' .
-        \ '%-G%.%#',
-    \ }
-let g:neomake_python_enabled_makers = ['flake8']
 
