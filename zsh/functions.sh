@@ -1,3 +1,7 @@
+function kubeName() {
+  cat $HOME/.kube/config | grep current-context | sed "s/[a-z\-]*: kube-[0-9]*_//" | sed "s/_zalan_do//"
+}
+
 function startZinc() {
  zinc -status >/dev/null
  if [ $? -ne 0 ]
