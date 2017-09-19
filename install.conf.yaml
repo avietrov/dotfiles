@@ -7,9 +7,10 @@
     ~/.pip: pip/
     ~/.config/nvim: nvim
     ~/.config/base16-shell: base16-shell
-    ~/.zsh: zsh/
+    ~/.config/zsh: zsh/
+    ~/.config/zshcustom: zshcustom/
+    ~/.config/oh-my-zsh: oh-my-zsh/
     ~/.zshrc: zshrc
-    ~/.zshcustom: zshcustom/
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
