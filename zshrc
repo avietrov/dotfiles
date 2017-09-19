@@ -1,12 +1,12 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.config/oh-my-zsh
 export UPDATE_ZSH_DAYS=14
 
 plugins=(git osx scala mvn activator z docker)
 
 ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
-ZSH_CUSTOM=$HOME/.zshcustom/
+ZSH_CUSTOM=$HOME/.config/zshcustom/
 
 CASE_SENSITIVE="false"
 HYPHEN_INSENSITIVE="false"
@@ -16,15 +16,13 @@ ENABLE_CORRECTION="false"
 
 HIST_STAMPS="yyyy-mm-dd"
 
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
 source $ZSH/oh-my-zsh.sh
 
 # Load custom files
-source $HOME/.zsh/aliases.sh
-source $HOME/.zsh/exports.sh
-source $HOME/.zsh/functions.sh
-source $HOME/.extra.sh
+source $HOME/.config/zsh/aliases.sh
+source $HOME/.config/zsh/exports.sh
+source $HOME/.config/zsh/functions.sh
+source $HOME/.config/extra.sh
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
