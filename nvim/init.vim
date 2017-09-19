@@ -1,41 +1,24 @@
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
-endif
+set nocompatible               " Be iMproved
 
-set runtimepath+=$HOME/.config/nvim/dein/repos/github.com/Shougo/dein.vim
+call plug#begin('~/.local/share/nvim/plugged')
 
-if dein#load_state('$HOME/.config/nvim/dein')
-  call dein#begin('$HOME/.config/nvim/dein')
-
-  call dein#add('$HOME/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
-
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('benekastah/neomake')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('Shougo/deoplete.nvim')
+  Plug 'benekastah/neomake'
+  Plug 'scrooloose/nerdtree'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'tomtom/tcomment_vim'
 
   " Git
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('airblade/vim-gitgutter')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
-
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " UI
-  call dein#add('chriskempson/base16-vim')
-  call dein#add('bling/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
+  Plug 'chriskempson/base16-vim'
+  Plug 'bling/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'nathanaelkane/vim-indent-guides'
 
-  call dein#end()
-  call dein#save_state()
-endif
-
-filetype plugin indent on
-syntax enable
-
-"End dein Scripts-------------------------
+call plug#end()
 
 filetype plugin indent on
 
@@ -71,27 +54,21 @@ let g:python_host_prog='/usr/local/bin/python'
 let g:python3_host_prog='/usr/local/bin/python3'
 
 """"" KEY MAPPINGS """""
-map <c-n>t :NERDTreeToggle<CR>
-inoremap <silent><expr> <TAB>
-    \ pumvisible() ? "\<C-n>" :
-    \ <SID>check_back_space() ? "\<TAB>" :
-    \ deoplete#mappings#manual_complete()
-    function! s:check_back_space() abort "{{{
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-    endfunction"}}}
+map <C-n> t :NERDTreeToggle<CR>
 
-""""" CONFIG """""
-autocmd Filetype gitcommit setlocal spell textwidth=80
+""""" PLUGIN CONFIG """""
 
-"" NEOMAKE
-let g:neomake_python_flake8_maker = {
-    \ 'args': ['--format=default'],
-    \ 'errorformat':
-        \ '%E%f:%l: could not compile,%-Z%p^,' .
-        \ '%A%f:%l:%c: %t%n %m,' .
-        \ '%A%f:%l: %t%n %m,' .
-        \ '%-G%.%#',
-    \ }
-let g:neomake_python_enabled_makers = ['flake8']
+" NERDTree Git Plug Setting
+let g:NERDTreeIndicatorMapCustom = {
+  \ "Modified"  : "+",
+  \ "Staged"    : "∫",
+  \ "Untracked" : "*",
+  \ "Renamed"   : "→",
+  \ "Unmerged"  : "=",
+  \ "Deleted"   : "x",
+  \ "Dirty"     : "!",
+  \ "Clean"     : "√",
+  \ 'Ignored'   : '~',
+  \ "Unknown"   : "?"
+  \ }
 
