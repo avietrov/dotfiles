@@ -12,6 +12,7 @@
     ~/.config/oh-my-zsh: oh-my-zsh/
     ~/.zshrc: zshrc
     ~/.tmux.conf: tmux.conf
+    "~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings": sublime/Preferences.sublime-settings
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
