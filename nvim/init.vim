@@ -5,7 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'benekastah/neomake'
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'tomtom/tcomment_vim'
+  Plug 'tpope/vim-commentary'
 
   " Git
   Plug 'tpope/vim-fugitive'
