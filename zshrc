@@ -23,6 +23,4 @@ source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/exports.sh
 source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
-
-bindkey -v
-bindkey '^R' history-incremental-search-backward
+source $HOME/.config/zsh/fzf.zsh
