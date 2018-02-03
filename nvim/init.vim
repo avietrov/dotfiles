@@ -14,9 +14,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " UI
   Plug 'chriskempson/base16-vim'
-  Plug 'bling/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
   Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'itchyny/lightline.vim'
 
   " Markdown
   Plug 'junegunn/goyo.vim'
@@ -26,6 +25,10 @@ call plug#end()
 filetype plugin indent on
 
 """"" LOOK AND FEEL """""
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': '16color',
+      \ }
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
@@ -34,6 +37,7 @@ endif
 set number 			" Enable line numbers
 set cursorline 	" Highlight current line
 set gdefault		" Add the g flag to search/replace by default
+set noshowmode  " Replaced by lightline
 set backspace=indent,eol,start " Allow backspace in insert mode
 
 """"" BEHAVIOR """""
