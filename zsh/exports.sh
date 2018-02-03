@@ -3,6 +3,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export TEMPLATES_HOME="$HOME/Documents/templates"
 export GOPATH=$HOME/src/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export TERM=xterm-256color
 
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
