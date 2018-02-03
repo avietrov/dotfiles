@@ -1,4 +1,4 @@
-set nocompatible               " Be iMproved
+set nocompatible
 
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -34,7 +34,6 @@ set gdefault		" Add the g flag to search/replace by default
 set backspace=indent,eol,start " Allow backspace in insert mode
 
 """"" BEHAVIOR """""
-
 set tabstop=2			" Make tabs as wide as two spaces
 set shiftwidth=2
 set hlsearch 			" Highlight searches
@@ -45,16 +44,36 @@ set noerrorbells 	" Disable error bells
 set ruler 				" Show the cursor position
 set showcmd 			" Show incomplete commands
 set expandtab
+set nobackup      " no backups, vcs ftw
+set nowb
+set noswapfile
+
+" WILD MENU
+set wildmenu
+set wildignore=*.o,*~,*.pyc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+
+" Set to auto read when a file is changed from the outside
+set autoread
 
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
 
 let g:python_host_prog='/usr/local/bin/python'
 let g:python3_host_prog='/usr/local/bin/python3'
 
 """"" KEY MAPPINGS """""
-map <C-n> t :NERDTreeToggle<CR>
+map <leader>w :w!<cr>
+map <leader>t :NERDTreeToggle<CR>
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 """"" PLUGIN CONFIG """""
 
