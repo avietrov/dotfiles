@@ -18,6 +18,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'nathanaelkane/vim-indent-guides'
 
+  " Markdown
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -91,3 +94,7 @@ let g:NERDTreeIndicatorMapCustom = {
   \ "Unknown"   : "?"
   \ }
 
+
+" Goyo and Limelight
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
