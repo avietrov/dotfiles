@@ -2,7 +2,7 @@
 export ZSH=$HOME/.config/oh-my-zsh
 export UPDATE_ZSH_DAYS=14
 
-plugins=(git osx scala mvn activator z docker)
+plugins=(git osx scala mvn activator z docker vi-mode)
 
 ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
