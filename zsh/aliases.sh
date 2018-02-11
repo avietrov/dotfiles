@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Shortcuts
 alias dr="cd ~/Dropbox"
 alias dl="cd ~/Downloads"

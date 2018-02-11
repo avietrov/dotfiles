@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 export EDITOR='vim';
 export JAVA_HOME=$(/usr/libexec/java_home)
 export TEMPLATES_HOME="$HOME/Documents/templates"
