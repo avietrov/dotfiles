@@ -2,7 +2,7 @@
 export ZSH=$HOME/.config/oh-my-zsh
 export UPDATE_ZSH_DAYS=14
 
-plugins=(git osx scala mvn activator z docker vi-mode)
+plugins=(git z docker)
 
 ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
@@ -20,7 +20,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Load custom files
 source $HOME/.config/zsh/aliases.sh
-source $HOME/.config/zsh/exports.sh
 source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
 source $HOME/.config/zsh/fzf.zsh
+
+# Base16 Shell
+BASE16_SHELL=$HOME/.config/base16-shell/;
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)";
