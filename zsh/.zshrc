@@ -22,7 +22,6 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
-source $HOME/.config/zsh/fzf.zsh
 
 # Base16 Shell
 BASE16_SHELL=$HOME/.config/base16-shell/;
