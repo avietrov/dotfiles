@@ -16,6 +16,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " UI
+  Plug 'ryanoasis/vim-devicons'
   Plug 'itchyny/lightline.vim'
   Plug 'altercation/vim-colors-solarized'
 call plug#end()
