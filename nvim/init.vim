@@ -2,6 +2,9 @@ set nocompatible
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'zchee/deoplete-jedi'
+
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-commentary'
@@ -14,6 +17,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'altercation/vim-colors-solarized'
 call plug#end()
+let g:deoplete#enable_at_startup = 1
 
 filetype plugin indent on
 
