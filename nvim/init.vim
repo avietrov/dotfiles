@@ -13,9 +13,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " UI
-  Plug 'chriskempson/base16-vim'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'itchyny/lightline.vim'
+  Plug 'altercation/vim-colors-solarized'
 
   " Markdown
   Plug 'junegunn/goyo.vim'
@@ -26,13 +26,9 @@ filetype plugin indent on
 
 """"" LOOK AND FEEL """""
 " Lightline
-let g:lightline = {
-      \ 'colorscheme': '16color',
-      \ }
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+let g:lightline = { 'colorscheme': 'solarized', }
+set background=dark
+colorscheme solarized
 
 set number 			" Enable line numbers
 set cursorline 	" Highlight current line
