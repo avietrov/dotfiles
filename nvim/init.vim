@@ -9,7 +9,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'jistr/vim-nerdtree-tabs'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'tpope/vim-commentary'
+  Plug 'scrooloose/nerdcommenter'
 
   " Git
   Plug 'airblade/vim-gitgutter'
