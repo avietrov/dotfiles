@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'zchee/deoplete-jedi'
 
   Plug 'scrooloose/nerdtree'
+  Plug 'jistr/vim-nerdtree-tabs'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-commentary'
 
@@ -19,6 +20,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'altercation/vim-colors-solarized'
 call plug#end()
 let g:deoplete#enable_at_startup = 1
+let g:nerdtree_tabs_open_on_console_startup=1
 
 filetype plugin indent on
 
