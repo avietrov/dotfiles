@@ -8,7 +8,7 @@ export TERM='xterm-256color';
 export ZSH=$HOME/.config/oh-my-zsh
 export UPDATE_ZSH_DAYS=14
 
-plugins=(git z docker pyenv)
+plugins=(brew catimg chucknorris colorize docker git osx pyenv)
 
 ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
@@ -28,6 +28,8 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
+
+eval $(thefuck --alias)
 
 # Base16 Shell
 BASE16_SHELL=$HOME/.config/base16-shell/;
