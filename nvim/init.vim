@@ -3,6 +3,7 @@ set nocompatible
 call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'zchee/deoplete-go', { 'do': 'make'}
   Plug 'zchee/deoplete-jedi'
 
   Plug 'scrooloose/nerdtree'
