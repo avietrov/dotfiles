@@ -2,24 +2,17 @@ set nocompatible
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-  Plug 'benekastah/neomake'
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-commentary'
 
   " Git
-  Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
   Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " UI
-  Plug 'nathanaelkane/vim-indent-guides'
   Plug 'itchyny/lightline.vim'
   Plug 'altercation/vim-colors-solarized'
-
-  " Markdown
-  Plug 'junegunn/goyo.vim'
-  Plug 'junegunn/limelight.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -67,9 +60,6 @@ set scrolloff=3
 let mapleader = ","
 let g:mapleader = ","
 
-let g:python_host_prog='/usr/local/bin/python'
-let g:python3_host_prog='/usr/local/bin/python3'
-
 """"" KEY MAPPINGS """""
 map <leader>w :w!<cr>
 map <leader>t :NERDTreeToggle<CR>
@@ -83,7 +73,7 @@ map <C-l> <C-W>l
 " NERDTree Git Plug Setting
 let g:NERDTreeIndicatorMapCustom = {
   \ "Modified"  : "+",
-  \ "Staged"    : "∫",
+  \ "Staged"    : "s",
   \ "Untracked" : "*",
   \ "Renamed"   : "→",
   \ "Unmerged"  : "=",
@@ -94,7 +84,3 @@ let g:NERDTreeIndicatorMapCustom = {
   \ "Unknown"   : "?"
   \ }
 
-
-" Goyo and Limelight
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
