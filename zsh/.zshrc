@@ -8,7 +8,7 @@ export TERM='xterm-256color';
 export ZSH=$HOME/.config/oh-my-zsh
 export UPDATE_ZSH_DAYS=14
 
-plugins=(git z docker)
+plugins=(git z docker pyenv)
 
 ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
