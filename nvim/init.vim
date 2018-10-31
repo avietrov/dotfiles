@@ -18,7 +18,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   " UI
   Plug 'ryanoasis/vim-devicons'
   Plug 'itchyny/lightline.vim'
-  Plug 'altercation/vim-colors-solarized'
+  Plug 'chriskempson/base16-vim'
+  Plug 'daviesjamie/vim-base16-lightline'
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -26,10 +27,11 @@ let g:nerdtree_tabs_open_on_console_startup=1
 filetype plugin indent on
 
 """"" LOOK AND FEEL """""
-" Lightline
-let g:lightline = { 'colorscheme': 'solarized', }
+set termguicolors
+let base16colorspace=256
+let g:lightline = { 'colorscheme': 'base16', }
 set background=dark
-colorscheme solarized
+colorscheme base16-monokai
 
 set number 			" Enable line numbers
 set cursorline 	" Highlight current line
