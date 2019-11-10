@@ -29,8 +29,6 @@ source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
 
-eval $(thefuck --alias)
-
 # JAVA
 export JAVA_HOME=$(/usr/libexec/java_home);
 
