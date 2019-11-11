@@ -1,12 +1,5 @@
 #!/bin/zsh
 
-# Shortcuts
-alias dr="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias pr="cd ~/Projects"
-alias sl="cd ~/Study/lectures/"
-
 # Program aliases
 alias o="open"
 alias vf='vifm .'
