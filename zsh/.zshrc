@@ -38,4 +38,9 @@ export GOPATH=$HOME/src/go;
 export GOROOT=/usr/local/opt/go/libexec;
 export PATH=$PATH:$GOPATH/bin;
 export PATH=$PATH:$GOROOT/bin;
-export PATH="/usr/local/sbin:$PATH"
+
+# Python
+export PATH="/Users/antonv/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
