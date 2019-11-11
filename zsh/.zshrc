@@ -30,7 +30,8 @@ source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
 
 # JAVA
-export JAVA_HOME=$(/usr/libexec/java_home);
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # GO
 export GOPATH=$HOME/src/go;
