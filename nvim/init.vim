@@ -4,7 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'zchee/deoplete-go', { 'do': 'make'}
-  Plug 'zchee/deoplete-jedi'
+  Plug 'dense-analysis/ale'
 
   Plug 'scrooloose/nerdtree'
   Plug 'jistr/vim-nerdtree-tabs'
@@ -23,6 +23,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 call plug#end()
 let g:deoplete#enable_at_startup = 1
 let g:nerdtree_tabs_open_on_console_startup=1
+
+call deoplete#custom#option('sources', {
+\ '_': ['ale'],
+\})
 
 filetype plugin indent on
 
