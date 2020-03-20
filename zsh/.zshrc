@@ -29,6 +29,8 @@ source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
 
+export PATH="/usr/local/sbin:$PATH"
+
 # JAVA
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
