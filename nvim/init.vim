@@ -105,3 +105,5 @@ let g:NERDTreeIndicatorMapCustom = {
   \ "Unknown"   : "?"
   \ }
 
+
+let g:python3_host_prog = '/Users/antonv/.pyenv/versions/neovim/bin/python'
