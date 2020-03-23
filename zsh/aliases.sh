@@ -18,3 +18,4 @@ alias reload="exec $SHELL -l"
 
 alias cutt="cut -c1-120"
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+alias git_clean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
