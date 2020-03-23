@@ -2,10 +2,6 @@ set nocompatible
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'zchee/deoplete-go', { 'do': 'make'}
-  Plug 'dense-analysis/ale'
-
   Plug 'scrooloose/nerdtree'
   Plug 'jistr/vim-nerdtree-tabs'
   Plug 'ctrlpvim/ctrlp.vim'
@@ -21,12 +17,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'chriskempson/base16-vim'
   Plug 'daviesjamie/vim-base16-lightline'
 call plug#end()
-let g:deoplete#enable_at_startup = 1
 let g:nerdtree_tabs_open_on_console_startup=1
-
-call deoplete#custom#option('sources', {
-\ '_': ['ale'],
-\})
 
 filetype plugin indent on
 
