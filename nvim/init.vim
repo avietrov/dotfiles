@@ -96,5 +96,4 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
   \ "Unknown"   : "?"
   \ }
 
-
-let g:python3_host_prog = '/Users/antonv/.pyenv/versions/neovim/bin/python'
+let g:python3_host_prog=$HOME.'/.pyenv/versions/vim/bin/python3'
