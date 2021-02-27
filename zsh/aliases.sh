@@ -6,8 +6,9 @@ alias rm='trash'
 alias vim='nvim'
 alias cat='bat'
 alias find='fd'
-alias grep='ripgrep'
+alias rg='ripgrep'
 alias ls='exa'
+alias l="exa -lahF"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
