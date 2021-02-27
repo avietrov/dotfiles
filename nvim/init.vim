@@ -83,7 +83,7 @@ map <C-l> <C-W>l
 """"" PLUGIN CONFIG """""
 
 " NERDTree Git Plug Setting
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
   \ "Modified"  : "+",
   \ "Staged"    : "s",
   \ "Untracked" : "*",
