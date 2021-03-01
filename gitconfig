@@ -33,3 +33,5 @@
 [user]
 	name = Anton Vietrov
 	email = anton.vietrov@zalando.de
+[fetch]
+	prune = true
