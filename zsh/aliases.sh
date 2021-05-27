@@ -1,14 +1,9 @@
 #!/bin/zsh
 
 # Program aliases
-alias o="open"
 alias rm='trash'
 alias vim='nvim'
-alias cat='bat'
-alias find='fd'
-alias rg='ripgrep'
-alias ls='exa'
-alias l="exa -lahF"
+alias e='exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
 
 # git aliases
 alias gs='git status -sb'
