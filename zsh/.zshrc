@@ -10,7 +10,6 @@ export UPDATE_ZSH_DAYS=14
 
 plugins=(brew catimg colorize docker git osx pyenv)
 
-ZSH_THEME="pure"
 DISABLE_LS_COLORS="false"
 ZSH_CUSTOM=$HOME/.config/zshcustom/
 
@@ -30,6 +29,9 @@ source $HOME/.config/zsh/functions.sh
 source $HOME/.config/extra.sh
 
 export PATH="/usr/local/sbin:$PATH"
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 # JAVA
 export PATH="$HOME/.jenv/bin:$PATH"
