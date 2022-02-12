@@ -4,10 +4,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
-    ~/.config/zsh: zsh/
-    ~/.config/zshcustom: zshcustom/
-    ~/.config/oh-my-zsh: oh-my-zsh/
-    ~/.config/starship.toml: starship.toml
+    ~/.config/fish: fish
 
 
 - shell:
