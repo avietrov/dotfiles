@@ -32,6 +32,8 @@
   prune = remote prune origin
 [user]
 	name = Anton Vietrov
-	email = anton.vietrov@zalando.de
+	email = avietrov@users.noreply.github.com
 [fetch]
 	prune = true
+[init]
+	defaultBranch = master
