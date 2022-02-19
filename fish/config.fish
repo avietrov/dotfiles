@@ -1,15 +1,26 @@
+# PATH
+fish_add_path /usr/local/sbin
+
+# JENV
+set -x JENV_ROOT /usr/local/opt/jenv
+set PATH $HOME/.jenv/bin $PATH
+status --is-interactive; and source (jenv init -|psub)
+
+# PYENV
+status is-login; and pyenv init --path | source
+status is-interactive; and pyenv init - | source
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-
-# PATH
-fish_add_path /usr/local/sbin
 
 # ALIASES
 alias reload='source ~/.config/fish/config.fish'
 alias rm='trash'
 alias vim='nvim'
 alias e='exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
+alias mfmt='mvn fmt:format'
+alias brew="env PATH=(string replace (pyenv root)/shims '' \"\$PATH\") brew"
 
 source "$HOME/.config/custom.fish"
 
