@@ -1,7 +1,6 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
     ~/.config/fish: fish
