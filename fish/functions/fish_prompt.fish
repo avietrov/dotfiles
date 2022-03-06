@@ -5,5 +5,5 @@ function fish_prompt
     set -g __fish_git_prompt_show_informative_status true
     echo (fish_git_prompt)
     set_color green
-    echo '>' (set_color normal)
+    echo '❯' (set_color normal)
 end
