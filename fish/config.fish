@@ -10,6 +10,10 @@ status --is-interactive; and source (jenv init -|psub)
 status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
 
+# GO
+set -x GOPATH $HOME/src/go
+fish_add_path $GOPATH/bin
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
