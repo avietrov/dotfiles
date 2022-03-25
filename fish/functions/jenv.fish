@@ -1,1 +1,0 @@
-/usr/local/opt/jenv/libexec/fish/jenv.fish
