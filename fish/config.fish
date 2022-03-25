@@ -1,5 +1,5 @@
-# PATH
-fish_add_path /usr/local/sbin
+# BREW
+eval (/opt/homebrew/bin/brew shellenv)
 
 # JENV
 fish_add_path $HOME/.jenv/bin
@@ -23,7 +23,6 @@ alias rm='trash'
 alias vim='nvim'
 alias e='exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
 alias mfmt='mvn fmt:format'
-alias brew="env PATH=(string replace (pyenv root)/shims '' \"\$PATH\") brew"
 
 source "$HOME/.config/custom.fish"
 
