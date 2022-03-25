@@ -2,7 +2,6 @@
 fish_add_path /usr/local/sbin
 
 # JENV
-set -x JENV_ROOT /usr/local/opt/jenv
 fish_add_path $HOME/.jenv/bin
 status --is-interactive; and source (jenv init -|psub)
 
