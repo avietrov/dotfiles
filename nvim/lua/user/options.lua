@@ -1,3 +1,5 @@
+vim.opt.compatible = false
+
 -- LOOK AND FEEL
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
