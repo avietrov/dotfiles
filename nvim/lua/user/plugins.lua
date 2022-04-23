@@ -1,19 +1,32 @@
-local Plug = vim.fn['plug#']
+packer = require('packer')
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
 
-vim.call('plug#begin', '~/.local/share/nvim/plugged')
-  Plug 'scrooloose/nerdtree'
-  Plug 'jistr/vim-nerdtree-tabs'
-  Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'scrooloose/nerdcommenter'
-  Plug 'dag/vim-fish'
+vim.cmd [[packadd packer.nvim]]
+return require('packer').startup(function()
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+
+  -- Simple plugins can be specified as strings
+  use 'scrooloose/nerdtree'
+  use 'jistr/vim-nerdtree-tabs'
+  use 'ctrlpvim/ctrlp.vim'
+  use 'scrooloose/nerdcommenter'
+  use 'dag/vim-fish'
 
   -- Git
-  Plug 'airblade/vim-gitgutter'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
+  use 'airblade/vim-gitgutter'
+  use 'Xuyuanp/nerdtree-git-plugin'
 
   -- UI
-  Plug 'ryanoasis/vim-devicons'
-  Plug 'itchyny/lightline.vim'
-  Plug 'chriskempson/base16-vim'
-  Plug 'daviesjamie/vim-base16-lightline'
-vim.call('plug#end')
+  use 'ryanoasis/vim-devicons'
+  use 'itchyny/lightline.vim'
+  use 'chriskempson/base16-vim'
+  use 'daviesjamie/vim-base16-lightline'
+
+end)
