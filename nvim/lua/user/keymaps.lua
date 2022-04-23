@@ -2,9 +2,11 @@ local opts = { noremap = true, silent = true }
 
 local keymap = vim.api.nvim_set_keymap
 
--- With a map leader it's possible to do extra key combinations
--- like <leader>w saves the current file
-vim.g.mapleader = ","
+-- use space key as a leader
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 
 -- KEY MAPPINGS
 keymap("n", "<leader>w", ":w!<cr>", opts)
