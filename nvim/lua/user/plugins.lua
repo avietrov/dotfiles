@@ -12,9 +12,16 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
-  use 'scrooloose/nerdtree'
-  use 'jistr/vim-nerdtree-tabs'
+  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    }
+  }
+
   use 'ctrlpvim/ctrlp.vim'
   use 'scrooloose/nerdcommenter'
   use 'dag/vim-fish'
