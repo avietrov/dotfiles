@@ -1,2 +1,2 @@
-require("lspconfig")
-require("user.lsp.lsp-installer")
+require "lspconfig"
+require "user.lsp.lsp-installer"

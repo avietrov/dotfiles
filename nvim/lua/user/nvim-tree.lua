@@ -12,7 +12,7 @@ vim.g.nvim_tree_icons = {
   },
 }
 
-require("nvim-tree").setup {
+require("nvim-tree").setup({
   diagnostics = {
     enable = true,
     icons = {
@@ -26,4 +26,4 @@ require("nvim-tree").setup {
     cmd = "trash",
     require_confirm = true,
   },
-}
+})

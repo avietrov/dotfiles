@@ -1,4 +1,4 @@
-require('bufferline').setup {
+require("bufferline").setup({
   options = {
     mode = "buffers",
     numbers = "none",
@@ -14,7 +14,6 @@ require('bufferline').setup {
     persist_buffer_sort = true,
     separator_style = "thin",
     always_show_bufferline = true,
-    sort_by = 'insert_after_current'
-  }
-}
-
+    sort_by = "insert_after_current",
+  },
+})
