@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
 
   use "windwp/nvim-autopairs"
   use "numToStr/Comment.nvim"
+  use 'nvim-lualine/lualine.nvim'
+  use "lukas-reineke/indent-blankline.nvim"
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -48,6 +50,7 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
