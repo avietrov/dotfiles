@@ -17,7 +17,6 @@ local function lsp_keymaps(bufnr)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
-
 local function lsp_highlight_document(client)
   -- Set autocommands conditional on server_capabilities
   if client.resolved_capabilities.document_highlight then
@@ -28,17 +27,16 @@ local function lsp_highlight_document(client)
         autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
         autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
       augroup END
-    ]],
+    ]] ,
       false
     )
   end
 end
 
-
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
-function on_attach(client, bufnr)
+local function on_attach(client, bufnr)
   lsp_keymaps(bufnr)
   lsp_highlight_document(client)
 end
@@ -46,4 +44,4 @@ end
 return {
   on_attach = on_attach,
   capabilities = capabilities,
-}  
+}
