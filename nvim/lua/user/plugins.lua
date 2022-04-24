@@ -63,8 +63,7 @@ return require('packer').startup(function(use)
   }
 
   -- Git
-  use 'airblade/vim-gitgutter'
-  use 'Xuyuanp/nerdtree-git-plugin'
+  use "lewis6991/gitsigns.nvim"
 
   -- UI
   use 'ryanoasis/vim-devicons'
