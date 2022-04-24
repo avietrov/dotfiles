@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   use "windwp/nvim-autopairs"
+  use "numToStr/Comment.nvim"
 
   use {
     'kyazdani42/nvim-tree.lua',
