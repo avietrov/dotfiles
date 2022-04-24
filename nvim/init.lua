@@ -4,4 +4,4 @@ require "user.plugins"
 require "user.colorscheme"
 require "user.nvim-tree"
 require "user.cmp"
-
+require "user.lsp"
