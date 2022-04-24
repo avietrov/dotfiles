@@ -1,7 +1,5 @@
-local colorscheme = "base16-monokai"
+require('onedark').setup {
+    style = 'darker'
+}
+require('onedark').load()
 
-vim.opt.termguicolors = true
-vim.opt.background = "dark"
-vim.cmd("colorscheme " .. colorscheme)
-vim.g.base16colorspace = 256
--- let g:lightline = { 'colorscheme': 'base16', }

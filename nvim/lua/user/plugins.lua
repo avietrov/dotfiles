@@ -66,7 +66,11 @@ return require('packer').startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
-  -- UI
-  use 'chriskempson/base16-vim'
-
+  -- colorschemes
+  -- use 'RRethy/nvim-base16'
+  -- use "lunarvim/darkplus.nvim"
+  use 'Shatur/neovim-ayu'
+  use 'LunarVim/darkplus.nvim'
+  use 'LunarVim/onedarker.nvim'
+  use 'navarasu/onedark.nvim'
 end)
