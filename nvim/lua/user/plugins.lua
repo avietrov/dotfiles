@@ -1,4 +1,6 @@
 packer = require('packer')
+
+-- show packer in a floating window
 packer.init {
   display = {
     open_fn = function()
@@ -6,6 +8,14 @@ packer.init {
     end,
   },
 }
+
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
+
 
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
