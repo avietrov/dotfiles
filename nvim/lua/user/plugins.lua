@@ -35,9 +35,10 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'ctrlpvim/ctrlp.vim'
-  use 'scrooloose/nerdcommenter'
-  use 'dag/vim-fish'
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -66,9 +67,6 @@ return require('packer').startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   -- UI
-  use 'ryanoasis/vim-devicons'
-  use 'itchyny/lightline.vim'
   use 'chriskempson/base16-vim'
-  use 'daviesjamie/vim-base16-lightline'
 
 end)
