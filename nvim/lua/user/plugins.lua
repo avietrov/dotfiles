@@ -1,4 +1,4 @@
-packer = require('packer')
+local packer = require('packer')
 
 -- show packer in a floating window
 packer.init {
@@ -18,7 +18,7 @@ vim.cmd([[
 
 
 vim.cmd [[packadd packer.nvim]]
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
