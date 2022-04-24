@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
   use "numToStr/Comment.nvim"
   use 'nvim-lualine/lualine.nvim'
   use "lukas-reineke/indent-blankline.nvim"
+  use "folke/which-key.nvim"
 
   use {
     'kyazdani42/nvim-tree.lua',
