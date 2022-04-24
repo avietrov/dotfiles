@@ -53,6 +53,12 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use "williamboman/nvim-lsp-installer"
 
+  -- Tree sitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+
   -- Git
   use 'airblade/vim-gitgutter'
   use 'Xuyuanp/nerdtree-git-plugin'
