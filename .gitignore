@@ -1,2 +1,5 @@
 nvim/plugged
 nvim/plugin/packer_compiled.lua
+fish/fish_variables
+
+fish/**/sdk.fish

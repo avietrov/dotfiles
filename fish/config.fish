@@ -1,10 +1,6 @@
 # BREW
 eval (/opt/homebrew/bin/brew shellenv)
 
-# JENV
-fish_add_path $HOME/.jenv/bin
-status --is-interactive; and source (jenv init -|psub)
-
 # PYENV
 status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
