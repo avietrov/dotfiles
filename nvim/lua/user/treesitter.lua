@@ -1,6 +1,6 @@
 local configs = require "nvim-treesitter.configs"
 configs.setup({
-  ensure_installed = { "lua", "rust", "python" },
+  ensure_installed = { "lua", "rust", "python", "latex" },
   sync_install = false,
   highlight = {
     enable = true,
