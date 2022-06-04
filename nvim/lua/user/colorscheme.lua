@@ -1,5 +1,4 @@
-require("ayu").setup({
-  mirage = false,
-  overrides = {}
+require("onedark").setup({
+  style = "darker",
 })
-require("ayu").colorscheme()
+require("onedark").load()
