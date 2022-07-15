@@ -65,6 +65,10 @@ return require("packer").startup(function(use)
     run = ":TSUpdate",
   })
 
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
+
+
   -- Git
   use "lewis6991/gitsigns.nvim"
 

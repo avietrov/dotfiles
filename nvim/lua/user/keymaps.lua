@@ -19,3 +19,6 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- telescope
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
