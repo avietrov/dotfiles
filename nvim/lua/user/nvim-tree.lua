@@ -29,4 +29,12 @@ require("nvim-tree").setup({
     cmd = "trash",
     require_confirm = true,
   },
+
+  -- required by projects
+  respect_buf_cwd = true,
+  update_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_cwd = true
+  },
 })
