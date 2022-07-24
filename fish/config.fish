@@ -6,8 +6,10 @@ else if test -e /usr/local/bin/brew
 end
 
 # PYENV
-status is-login; and pyenv init --path | source
-status is-interactive; and pyenv init - | source
+if command -sq pyenv
+  status is-login; and pyenv init --path | source
+  status is-interactive; and pyenv init - | source
+end
 
 # GO
 set -x GOPATH $HOME/src/go
