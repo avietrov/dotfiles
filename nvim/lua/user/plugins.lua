@@ -77,10 +77,5 @@ return require("packer").startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   -- colorschemes
-  -- use 'RRethy/nvim-base16'
-  -- use "lunarvim/darkplus.nvim"
-  use "Shatur/neovim-ayu"
-  use "LunarVim/darkplus.nvim"
-  use "LunarVim/onedarker.nvim"
-  use "navarasu/onedark.nvim"
+  use 'RRethy/nvim-base16'
 end)
