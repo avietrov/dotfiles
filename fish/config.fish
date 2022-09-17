@@ -15,9 +15,10 @@ end
 set -x GOPATH $HOME/src/go
 fish_add_path $GOPATH/bin
 
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+# Rust
+set -x RUSTUP_HOME $HOME/Code/.rustup
+set -x CARGO_HOME $HOME/Code/.cargo
+fish_add_path $CARGO_HOME/bin
 
 # ALIASES
 alias reload='source ~/.config/fish/config.fish'
