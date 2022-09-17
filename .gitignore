@@ -5,3 +5,4 @@ fish/fish_variables
 fish/**/sdk.fish
 fish/completions/
 fish/functions/
+! fish/functions/fish_prompt.fish
