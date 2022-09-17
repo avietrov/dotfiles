@@ -4,7 +4,7 @@
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
     ~/.config/fish: fish
-
+    ~/.hushlogin: hushlogin
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
