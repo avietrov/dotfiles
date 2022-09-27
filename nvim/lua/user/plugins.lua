@@ -28,8 +28,15 @@ return require("packer").startup(function(use)
   use "numToStr/Comment.nvim"
   use "nvim-lualine/lualine.nvim"
   use "lukas-reineke/indent-blankline.nvim"
-  use "folke/which-key.nvim"
   use "akinsho/toggleterm.nvim"
+  use "ahmedkhalf/project.nvim"
+  use "nvim-telescope/telescope.nvim"
+  use "lewis6991/gitsigns.nvim"
+
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  })
 
   use({
     "kyazdani42/nvim-tree.lua",
@@ -52,9 +59,6 @@ return require("packer").startup(function(use)
   use "hrsh7th/cmp-nvim-lua"
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
 
-  -- project
-  use "ahmedkhalf/project.nvim"
-
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
@@ -64,19 +68,8 @@ return require("packer").startup(function(use)
   use "williamboman/nvim-lsp-installer"
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
-  -- Tree sitter
-  use({
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  })
-
-  -- Telescope
-  use "nvim-telescope/telescope.nvim"
-
-
-  -- Git
-  use "lewis6991/gitsigns.nvim"
 
   -- colorschemes
   use 'RRethy/nvim-base16'
+  use 'folke/tokyonight.nvim'
 end)
