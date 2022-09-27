@@ -1,5 +1,5 @@
 config:
-	pyp3 install dotbot
+	pip3 install dotbot
 
 install:
 	dotbot -c install.conf.yaml
