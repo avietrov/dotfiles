@@ -45,10 +45,10 @@ return require("packer").startup(function(use)
     },
   })
 
-  use({
-    "akinsho/bufferline.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-  })
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
