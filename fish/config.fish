@@ -1,4 +1,5 @@
 # BREW
+set -x HOMEBREW_BUNDLE_FILE '~/.config/Brewfile'
 if test -e /opt/homebrew/bin/brew
   eval (/opt/homebrew/bin/brew shellenv)
 else if test -e /usr/local/bin/brew
