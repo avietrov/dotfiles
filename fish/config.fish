@@ -1,3 +1,4 @@
+set -x CDPATH ".:$HOME/Code"
 # BREW
 set -x HOMEBREW_BUNDLE_FILE '~/.config/Brewfile'
 if test -e /opt/homebrew/bin/brew
