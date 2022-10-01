@@ -32,6 +32,7 @@ local options = {
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17", -- the font used in graphical neovim applications
+  laststatus = 3, -- only one status line and not one per window
 }
 
 vim.opt.shortmess:append "c"
