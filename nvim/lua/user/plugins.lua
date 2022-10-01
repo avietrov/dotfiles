@@ -50,6 +50,11 @@ return require("packer").startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons'}
   }
 
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+  }
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
