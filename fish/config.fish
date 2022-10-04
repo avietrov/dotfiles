@@ -23,22 +23,28 @@ set -x CARGO_HOME $HOME/Code/.cargo
 fish_add_path $CARGO_HOME/bin
 
 # ALIASES
-alias reload='source ~/.config/fish/config.fish'
-alias rm='trash'
-alias vim='nvim'
-alias e='exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
-alias mfmt='mvn fmt:format'
+abbr -a reload 'source ~/.config/fish/config.fish'
+abbr -a rm 'trash'
+abbr -a vim 'nvim'
+abbr -a e 'exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
+abbr -a mfmt 'mvn fmt:format'
+
+# GIT
+abbr -a gap 'git add -p'
+abbr -a gb 'git branch -v'
+abbr -a gcm 'git commit -sm'
+abbr -a gco 'git checkout'
+abbr -a gd 'git diff'
+abbr -a glg "git log --graph --decorate --oneline --abbrev-commit"
+abbr -a gll 'git log --oneline'
+abbr -a gp 'git push origin HEAD'
+abbr -a gpp 'git push -u origin HEAD'
+abbr -a gs 'git status -sb'
+
+# K8S
+abbr -a k kubectl
+abbr -a kx kubectx
+abbr -a kn kubens
+abbr -a kg 'kubectl get'
 
 source "$HOME/.config/custom.fish"
-
-# GIT aliases
-alias gs='git status -sb'
-alias gp='git push'
-alias gap='git add -p'
-alias gco='git commit -m'
-alias gpp='git push -u origin HEAD'
-alias gdi='git diff'
-alias glo='git log'
-alias gll='git log --oneline'
-alias gls='git log --stat'
-alias git_clean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
