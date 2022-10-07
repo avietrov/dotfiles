@@ -23,10 +23,11 @@ set -x CARGO_HOME $HOME/Code/.cargo
 fish_add_path $CARGO_HOME/bin
 
 # ALIASES
-abbr -a reload 'source ~/.config/fish/config.fish'
-abbr -a rm 'trash'
-abbr -a vim 'nvim'
-abbr -a e 'exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
+alias reload='source ~/.config/fish/config.fish'
+alias rm='trash'
+alias vim='nvim'
+alias e='exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
+
 abbr -a mfmt 'mvn fmt:format'
 
 # GIT
