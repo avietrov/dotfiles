@@ -17,10 +17,6 @@ Install all the things:
 HOMEBREW_BUNDLE_FILE='~/.config/Brewfile' brew bundle
 ```
 
-## nvim
-
-* Setup Packer: https://github.com/wbthomason/packer.nvim#quickstart
-
 ## git
 I split gitconfig in two files to allow different global user settings on different machines (work, personal).
 
