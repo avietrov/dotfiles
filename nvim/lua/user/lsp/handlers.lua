@@ -23,11 +23,11 @@ local function lsp_highlight_document(client)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 local function on_attach(client, bufnr)
   if client.name == 'sumneko_lua' then
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.document_formatting = false
   end
   lsp_keymaps(bufnr)
   lsp_highlight_document(client)
