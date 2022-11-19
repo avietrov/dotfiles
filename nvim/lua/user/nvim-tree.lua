@@ -2,15 +2,25 @@ require("nvim-tree").setup({
   renderer = {
     icons = {
       glyphs = {
-        default = "",
+        default = "",
         symlink = "",
+        folder = {
+          default = "",
+          empty = "",
+          empty_open = "",
+          open = "",
+          symlink = "",
+          symlink_open = "",
+          arrow_open = "",
+          arrow_closed = "",
+        },
         git = {
           unstaged = "",
-          staged = "S",
+          staged = "✓",
           unmerged = "",
           renamed = "➜",
           deleted = "",
-          untracked = "U",
+          untracked = "★",
           ignored = "◌",
         },
       },
