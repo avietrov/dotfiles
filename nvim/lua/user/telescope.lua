@@ -9,3 +9,6 @@ telescope.setup({
 })
 
 telescope.load_extension "projects"
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
