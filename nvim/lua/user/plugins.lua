@@ -62,11 +62,6 @@ return require("packer").startup(function(use)
   })
 
   use({
-    "romgrk/barbar.nvim",
-    requires = { "kyazdani42/nvim-web-devicons" },
-  })
-
-  use({
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   })
