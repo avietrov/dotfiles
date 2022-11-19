@@ -6,12 +6,6 @@ Setup brew:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Setup Dotbot
-```
-mkdir ~/.config
-pip3 install dotbot && python3 -m dotbot -c install.conf.yaml
-```
-
 Install all the things:
 ```
 HOMEBREW_BUNDLE_FILE='~/.config/Brewfile' brew bundle

@@ -1,5 +1,8 @@
 - clean: ['~']
 
+- create:
+  - ~/.config
+
 - link:
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
