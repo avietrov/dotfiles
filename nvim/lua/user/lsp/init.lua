@@ -1,3 +1,4 @@
 require "lspconfig"
-require "user.lsp.lsp-installer"
+
+require "user.lsp.configs"
 require "user.lsp.null-ls"
