@@ -17,11 +17,6 @@ local function lsp_keymaps(bufnr)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
-local function lsp_highlight_document(client)
-  local illuminate = require('illuminate')
-  illuminate.on_attach(client)
-end
-
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
@@ -30,7 +25,6 @@ local function on_attach(client, bufnr)
     client.server_capabilities.document_formatting = false
   end
   lsp_keymaps(bufnr)
-  lsp_highlight_document(client)
 end
 
 return {

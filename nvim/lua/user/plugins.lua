@@ -32,7 +32,6 @@ return require("packer").startup(function(use)
   use "ahmedkhalf/project.nvim"
   use "nvim-telescope/telescope.nvim"
   use "lewis6991/gitsigns.nvim"
-  use "RRethy/vim-illuminate" -- Illuminate other uses of current word/symbol under cursor
 
   use({
     "nvim-treesitter/nvim-treesitter",
