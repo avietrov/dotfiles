@@ -33,7 +33,7 @@ abbr -a mfmt 'mvn fmt:format'
 # GIT
 abbr -a gap 'git add -p'
 abbr -a gb 'git branch -v'
-abbr -a gcm 'git commit -sm'
+abbr -a gcm 'git commit -m'
 abbr -a gco 'git checkout'
 abbr -a gd 'git diff'
 abbr -a glg "git log --graph --decorate --oneline --abbrev-commit"
