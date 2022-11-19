@@ -7,6 +7,7 @@
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
     ~/.config/fish: fish
+    ~/.config/custom.fish: custom.fish
     ~/.hushlogin: hushlogin
     ~/.config/Brewfile: Brewfile
 
