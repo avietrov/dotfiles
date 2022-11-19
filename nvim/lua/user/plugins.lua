@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
   use "ahmedkhalf/project.nvim"
   use "nvim-telescope/telescope.nvim"
   use "lewis6991/gitsigns.nvim"
+  use "khaveesh/vim-fish-syntax"
 
   use({
     "nvim-treesitter/nvim-treesitter",
