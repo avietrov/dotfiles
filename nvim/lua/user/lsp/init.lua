@@ -1,4 +1,5 @@
 require "lspconfig"
 
-require "user.lsp.configs"
+require "user.lsp.mason"
+require "user.lsp.handlers"
 require "user.lsp.null-ls"

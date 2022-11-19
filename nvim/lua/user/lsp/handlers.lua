@@ -1,3 +1,5 @@
+local M = {}
+
 local function lsp_keymaps(bufnr)
   local opts = { noremap = true, silent = true }
   local keymap = vim.api.nvim_buf_set_keymap
@@ -17,17 +19,14 @@ local function lsp_keymaps(bufnr)
   keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+M.capabilities = vim.lsp.protocol.make_client_capabilities()
+M.capabilities = require("cmp_nvim_lsp").default_capabilities(M.capabilities)
 
-local function on_attach(client, bufnr)
+M.on_attach = function(client, bufnr)
   if client.name == "sumneko_lua" then
     client.server_capabilities.document_formatting = false
   end
   lsp_keymaps(bufnr)
 end
 
-return {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+return M
