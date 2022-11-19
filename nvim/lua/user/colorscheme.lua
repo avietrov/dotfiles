@@ -26,7 +26,7 @@ require("tokyonight").setup({
       bg = c.normal,
       fg = c.fg_dark,
     }
-  end
+  end,
 })
 
 vim.cmd "colorscheme tokyonight"
