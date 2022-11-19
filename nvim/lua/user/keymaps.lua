@@ -23,7 +23,6 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- telescope
 keymap("n", "<C-p>", ":Telescope find_files<cr>", opts)
 
-
 -- trouble
 keymap("n", "<leader>xx", "<cmd>TroubleToggle<CR>", opts)
 keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>", opts)

@@ -45,15 +45,15 @@ return require("packer").startup(function(use)
     },
   })
 
-  use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
+  use({
+    "romgrk/barbar.nvim",
+    requires = { "kyazdani42/nvim-web-devicons" },
+  })
 
-  use {
+  use({
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
-  }
+  })
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -74,8 +74,7 @@ return require("packer").startup(function(use)
   use "williamboman/mason-lspconfig.nvim"
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
-
   -- colorschemes
-  use 'RRethy/nvim-base16'
-  use 'folke/tokyonight.nvim'
+  use "RRethy/nvim-base16"
+  use "folke/tokyonight.nvim"
 end)

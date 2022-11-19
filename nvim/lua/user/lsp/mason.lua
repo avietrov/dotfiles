@@ -1,6 +1,6 @@
 local servers = {
   "sumneko_lua",
-  "rust_analyzer"
+  "rust_analyzer",
 }
 
 local settings = {}
@@ -11,12 +11,12 @@ require("mason-lspconfig").setup({
   automatic_installation = true,
 })
 
-local lspconfig = require("lspconfig")
+local lspconfig = require "lspconfig"
 
 local opts = {}
 
 for _, server in pairs(servers) do
-  print ("Configuring " .. server)
+  print("Configuring " .. server)
   opts = {
     on_attach = require("user.lsp.handlers").on_attach,
     capabilities = require("user.lsp.handlers").capabilities,
