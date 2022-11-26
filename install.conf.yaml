@@ -6,6 +6,7 @@
 - link:
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
+    ~/.hammerspoon: hammerspoon
     ~/.config/fish: fish
     ~/.config/custom.fish: custom.fish
     ~/.hushlogin: hushlogin
