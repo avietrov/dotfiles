@@ -7,3 +7,4 @@ fish/completions/
 fish/functions/*
 !fish/functions/fish_prompt.fish
 custom.fish
+hammerspoon/Spoons/
