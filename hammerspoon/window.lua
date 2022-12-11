@@ -52,3 +52,17 @@ hs.hotkey.bind(HYPER, "J", function ()
   f.h = max.h / 2
   win:setFrame(f)
 end)
+
+hs.hotkey.bind(HYPER, "M", function ()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  f.x = max.x
+  f.y = max.y
+  f.w = max.w
+  f.h = max.h
+  win:setFrame(f)
+end
+)
