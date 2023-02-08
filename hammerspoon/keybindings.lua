@@ -1,5 +1,11 @@
 local keys = require('keys')
 
-hs.hotkey.bind(keys.HYPER, "\\", function ()
-  hs.application.launchOrFocus("iTerm")
-end)
+local function appShortcut(key, appName)
+  hs.hotkey.bind(keys.HYPER, key, function ()
+    hs.application.launchOrFocus(appName)
+  end)
+end
+
+appShortcut("\\", "iTerm")
+appShortcut("f", "ForkLift")
+appShortcut("n", "Craft")
