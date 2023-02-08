@@ -16,7 +16,6 @@ local lspconfig = require "lspconfig"
 local opts = {}
 
 for _, server in pairs(servers) do
-  print("Configuring " .. server)
   opts = {
     on_attach = require("user.lsp.handlers").on_attach,
     capabilities = require("user.lsp.handlers").capabilities,
