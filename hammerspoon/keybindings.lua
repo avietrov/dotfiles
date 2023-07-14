@@ -6,6 +6,9 @@ local function appShortcut(key, appName)
   end)
 end
 
-appShortcut("\\", "iTerm")
+appShortcut("t", "iTerm")
 appShortcut("f", "ForkLift")
 appShortcut("n", "Craft")
+appShortcut("m", "Maps")
+appShortcut("c", "Fleet")
+

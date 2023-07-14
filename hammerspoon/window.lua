@@ -52,7 +52,7 @@ hs.hotkey.bind(keys.HYPER, "J", function ()
   win:setFrame(f)
 end)
 
-hs.hotkey.bind(keys.HYPER, "M", function ()
+hs.hotkey.bind(keys.HYPER, "U", function ()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
