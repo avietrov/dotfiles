@@ -1,4 +1,6 @@
 set -x CDPATH ".:$HOME/Code"
+set -x BAT_THEME "base16"
+
 # BREW
 set -x HOMEBREW_BUNDLE_FILE '~/.config/Brewfile'
 if test -e /opt/homebrew/bin/brew
