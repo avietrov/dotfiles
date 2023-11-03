@@ -26,7 +26,7 @@ fish_add_path $CARGO_HOME/bin
 alias reload='source ~/.config/fish/config.fish'
 alias rm='trash'
 alias vim='nvim'
-alias e='exa -l -h --git --no-permissions --no-user --icons --group-directories-first'
+alias e='eza -l -h --git --no-permissions --no-user --icons --group-directories-first'
 
 abbr -a mfmt 'mvn fmt:format'
 
