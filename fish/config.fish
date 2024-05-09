@@ -50,4 +50,4 @@ abbr -a kx kubectx
 abbr -a kn kubens
 abbr -a kg 'kubectl get'
 
-source "$HOME/.config/custom.fish"
+source "$HOME/.custom.fish"
