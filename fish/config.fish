@@ -50,4 +50,6 @@ abbr -a kx kubectx
 abbr -a kn kubens
 abbr -a kg 'kubectl get'
 
-source "$HOME/.custom.fish"
+if test -e "$HOME/.custom.fish"
+    source "$HOME/.custom.fish"
+end
