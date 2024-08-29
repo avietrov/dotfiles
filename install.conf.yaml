@@ -1,21 +1,25 @@
-- clean: ['~']
+- clean: ["~"]
 
 - create:
-  - ~/.config
+    - ~/.config
+    - ~/.config/iterm2
+    - ~/.custom.fish
 
 - link:
     ~/.gitignore_global: gitignore_global
     ~/.config/nvim: nvim
     ~/.hammerspoon: hammerspoon
     ~/.config/fish: fish
-    ~/.config/custom.fish: custom.fish
     ~/.hushlogin: hushlogin
     ~/.config/Brewfile: Brewfile
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  # Specify the preferences directory
-  - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/iterm2"]
-  # Tell iTerm2 to use the custom preferences in the directory
-  - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true]
-
+    - [git submodule update --init --recursive, Installing submodules]
+    # Specify the preferences directory
+    - [
+        defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/iterm2",
+      ]
+    # Tell iTerm2 to use the custom preferences in the directory
+    - [
+        defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true,
+      ]
