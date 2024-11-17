@@ -2,7 +2,6 @@
 
 - create:
     - ~/.config
-    - ~/.custom.fish
 
 - link:
     ~/.gitignore_global: gitignore_global
@@ -12,6 +11,9 @@
     ~/.hushlogin: hushlogin
     ~/.config/Brewfile: Brewfile
     ~/.config/alacritty: alacritty
+    # this file is git ignored
+    # linking empty file for easy initial setup
+    ~/.custom.fish: custom.fish
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
