@@ -1,0 +1,8 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-ctrl-shift-/": "terminal_panel::ToggleFocus"
+    }
+  }
+]
