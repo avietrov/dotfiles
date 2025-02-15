@@ -14,5 +14,11 @@
   "buffer_font_features": {
     "liga": true
   },
-  "autosave": "on_focus_change"
+  "autosave": "on_focus_change",
+  "auto_install_extensions": {
+    "toml": true,
+    "yaml": true,
+    "fish": true,
+    "dockerfile": true
+  }
 }
