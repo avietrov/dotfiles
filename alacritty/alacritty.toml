@@ -13,3 +13,6 @@ padding.y = 3
 [font]
 normal.family = "SF Mono"
 size = 14
+
+[selection]
+save_to_clipboard = true
