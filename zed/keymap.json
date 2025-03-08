@@ -2,7 +2,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-ctrl-shift-/": "terminal_panel::ToggleFocus"
+      "alt-ctrl-shift-t": "terminal_panel::ToggleFocus"
     }
   }
 ]
