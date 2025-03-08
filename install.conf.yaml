@@ -5,16 +5,16 @@
     - ~/.config/zed
 
 - link:
-    ~/.gitignore_global: gitignore_global
-    ~/.config/nvim: nvim
-    ~/.config/fish: fish
-    ~/.hushlogin: hushlogin
     ~/.config/Brewfile: Brewfile
+    ~/.config/fish: fish
     ~/.config/ghostty: ghostty
+    ~/.config/nvim: nvim
     # only syncing the confg and keymap for zed
     # the config folder contains a lot more
     ~/.config/zed/keymap.json: zed/keymap.json
     ~/.config/zed/settings.json: zed/settings.json
+    ~/.gitignore_global: gitignore_global
+    ~/.hushlogin: hushlogin
     # this file is git ignored
     # linking empty file for easy initial setup
     ~/.custom.fish: custom.fish
