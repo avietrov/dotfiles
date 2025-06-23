@@ -5,6 +5,12 @@ set -x HOMEBREW_BUNDLE_FILE '~/.config/Brewfile'
 set -x HOMEBREW_NO_ENV_HINTS "1"
 eval (/opt/homebrew/bin/brew shellenv)
 
+# Node
+set -x NVM_DIR "$HOME/.nvm"
+if test -s "$NVM_DIR/nvm.sh"
+    source "$NVM_DIR/nvm.sh"
+end
+
 # GO
 set -x GOPATH $HOME/src/go
 fish_add_path $GOPATH/bin
