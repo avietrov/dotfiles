@@ -42,5 +42,6 @@
     "yaml": true,
     "fish": true,
     "dockerfile": true
-  }
+  },
+  "format_on_save": "off"
 }
