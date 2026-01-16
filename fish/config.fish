@@ -3,6 +3,7 @@ set -x BAT_THEME "base16"
 
 # BREW
 set -x HOMEBREW_BUNDLE_FILE '~/.config/Brewfile'
+set -x HOMEBREW_NO_ENV_HINTS "1"
 if test -e /opt/homebrew/bin/brew
   eval (/opt/homebrew/bin/brew shellenv)
 else if test -e /usr/local/bin/brew
