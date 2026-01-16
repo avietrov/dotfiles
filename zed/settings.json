@@ -7,6 +7,28 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "format_on_save": "off",
+  "project_panel": {
+    "auto_fold_dirs": true,
+    "hide_gitignore": false,
+    "dock": "left"
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_user_picture": false
+
+  },
+  "terminal": {
+    "copy_on_select": true
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": false,
+    "git_status": true
+  },
+  "base_keymap": "JetBrains",
+  "auto_signature_help": true,
+  "vim_mode": true,
   "theme": "Base16 Tomorrow Night",
   "ui_font_size": 14,
   "buffer_font_size": 14,
