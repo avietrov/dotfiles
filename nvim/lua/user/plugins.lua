@@ -66,19 +66,6 @@ return require("packer").startup(function(use)
     requires = "kyazdani42/nvim-web-devicons",
   })
 
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-
   -- colorschemes
   use "RRethy/nvim-base16"
   use "folke/tokyonight.nvim"
