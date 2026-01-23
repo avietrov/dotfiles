@@ -16,13 +16,3 @@ keymap("n", "<C-l>", "<C-W>l", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-
--- nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
--- trouble
-keymap("n", "<leader>xx", "<cmd>TroubleToggle<CR>", opts)
-keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>", opts)
-keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<CR>", opts)
-keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<CR>", opts)
-keymap("n", "<leader>xl", "<cmd>TroubleToggle loclist<CR>", opts)
