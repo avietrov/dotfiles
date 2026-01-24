@@ -9,6 +9,7 @@
     ~/.config/fish: fish
     ~/.config/ghostty: ghostty
     ~/.config/nvim: nvim
+    ~/.config/aerospace: aerospace
     # only syncing the confg and keymap for zed
     # the config folder contains a lot more
     ~/.config/zed/keymap.json: zed/keymap.json
