@@ -63,57 +63,6 @@ require("lazy").setup({
     end,
   },
 
-  -- Terminal
-  {
-    "akinsho/toggleterm.nvim",
-    version = "*",
-    keys = { [[<c-\>]] },
-    config = function()
-      require("toggleterm").setup({
-        open_mapping = [[<c-\>]],
-        direction = "float",
-      })
-    end,
-  },
-
-  -- Project management
-  {
-    "ahmedkhalf/project.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("project_nvim").setup()
-    end,
-  },
-
-  -- Fuzzy finder
-  {
-    "nvim-telescope/telescope.nvim",
-    cmd = "Telescope",
-    keys = {
-      { "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-      { "<C-f>", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
-      { "<C-b>", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
-    },
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      local telescope = require("telescope")
-      telescope.setup({
-        defaults = {
-          prompt_prefix = " ",
-          selection_caret = " ",
-          path_display = { "smart" },
-        },
-        pickers = {
-          buffers = {
-            theme = "dropdown",
-            previewer = false,
-          },
-        },
-      })
-      telescope.load_extension("projects")
-    end,
-  },
-
   -- Git signs
   {
     "lewis6991/gitsigns.nvim",
@@ -228,5 +177,4 @@ require("lazy").setup({
       vim.cmd("colorscheme base16-tomorrow-night")
     end,
   },
-  { "folke/tokyonight.nvim", lazy = true },
 })
