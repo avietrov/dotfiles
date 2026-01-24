@@ -1,36 +1,45 @@
 tap "homebrew/cask"
 tap "homebrew/core"
-brew "ack"
 brew "bat"
 brew "exiftool"
 brew "eza"
 brew "fd"
-brew "ffmpeg"
 brew "fish"
 brew "git-delta"
 brew "git-extras"
-brew "imagemagick"
 brew "jq"
 brew "mas"
 brew "neovim"
+brew "ollama"
 brew "p7zip"
 brew "ripgrep"
 brew "sd"
+brew "stylua"
 brew "trash"
 brew "uv"
 brew "watch"
 brew "yq"
 cask "1password"
+cask "nikitabobko/tap/aerospace"
 cask "alfred"
+cask "antinote"
 cask "appcleaner"
 cask "claude-code"
 cask "devtoys"
 cask "font-sf-mono"
 cask "ghostty"
 cask "stellarium"
+cask "iina"
+cask "keka"
+cask "maccy"
+cask "spotify"
 cask "zed"
 cask "zen"
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
 mas "Hidden Bar", id: 1452453066
+mas "Photomator", id: 1444636541
+mas "Pixelmator Pro", id: 1289583905
+mas "Reeder", id: 1529448980
+mas "reMarkable", id: 1276493162
 mas "Things", id: 904280696
