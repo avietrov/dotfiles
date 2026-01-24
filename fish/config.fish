@@ -1,20 +1,9 @@
-set -x CDPATH ".:$HOME/Code"
 set -x BAT_THEME "base16"
 
 # BREW
 set -x HOMEBREW_BUNDLE_FILE '~/.config/Brewfile'
 set -x HOMEBREW_NO_ENV_HINTS "1"
-if test -e /opt/homebrew/bin/brew
-  eval (/opt/homebrew/bin/brew shellenv)
-else if test -e /usr/local/bin/brew
-  eval (/usr/local/bin/brew shellenv)
-end
-
-# PYENV
-if command -sq pyenv
-  status is-login; and pyenv init --path | source
-  status is-interactive; and pyenv init - | source
-end
+eval (/opt/homebrew/bin/brew shellenv)
 
 # GO
 set -x GOPATH $HOME/src/go
@@ -45,11 +34,6 @@ abbr -a gp 'git push origin HEAD'
 abbr -a gpp 'git push -u origin HEAD'
 abbr -a gs 'git status -sb'
 
-# K8S
-abbr -a k kubectl
-abbr -a kx kubectx
-abbr -a kn kubens
-abbr -a kg 'kubectl get'
 
 if test -e "$HOME/.custom.fish"
     source "$HOME/.custom.fish"
