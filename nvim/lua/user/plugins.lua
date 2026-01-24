@@ -79,17 +79,11 @@ require("lazy").setup({
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    event = { "BufReadPre", "BufNewFile" },
+    lazy = false,
     config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = { "lua", "rust", "python", "latex" },
-        sync_install = false,
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = true,
-        },
-        indent = { enable = true },
-      })
+      local treesitter = require("nvim-treesitter")
+      treesitter.setup()
+      treesitter.install { 'java', 'lua', 'vim', 'rust', 'python', 'latex', 'html', 'yaml', 'toml' }
     end,
   },
 
