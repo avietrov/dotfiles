@@ -29,7 +29,7 @@
   "base_keymap": "JetBrains",
   "auto_signature_help": true,
   "vim_mode": true,
-  "theme": "Base16 Tomorrow Night",
+  "theme": "Zedokai (Filter Spectrum)",
   "ui_font_size": 14,
   "buffer_font_size": 14,
   "buffer_font_family": "SF Mono",

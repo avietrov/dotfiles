@@ -163,12 +163,16 @@ require("lazy").setup({
   },
 
   -- Colorschemes
+
   {
-    "RRethy/nvim-base16",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd("colorscheme base16-tomorrow-night")
-    end,
-  },
+  "loctvl842/monokai-pro.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("monokai-pro").setup({
+      filter ="spectrum"
+    })
+    vim.cmd.colorscheme("monokai-pro")
+  end,
+}
 })
