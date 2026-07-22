@@ -20,6 +20,10 @@ set -x RUSTUP_HOME $HOME/Code/.rustup
 set -x CARGO_HOME $HOME/Code/.cargo
 fish_add_path $CARGO_HOME/bin
 
+# Python
+fish_add_path "/Users/antonv/.local/bin"
+
+
 # ALIASES
 alias reload='source ~/.config/fish/config.fish'
 alias rm='trash'
