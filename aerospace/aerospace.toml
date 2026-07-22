@@ -11,7 +11,7 @@ config-version = 2
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -46,9 +46,7 @@ automatically-unhide-macos-hidden-apps = false
 # even when they are invisible.
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B",
-                         "C", "D", "E", "F", "G", "I", "M", "N", "O", "P", "Q",
-                         "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -71,7 +69,7 @@ on-mode-changed = []
 # Assign apps to workspaces
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 [[on-window-detected]]
-if.app-id = 'org.mozilla.firefox'
+if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
@@ -85,8 +83,7 @@ run = 'move-node-to-workspace 3'
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = [
-    'move-node-to-workspace 5',
-    'layout tiling'
+    'layout floating'
 ]
 
 [[on-window-detected]]
@@ -96,6 +93,14 @@ run = 'move-node-to-workspace 6'
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace 7'
+
+[[on-window-detected]]
+if.app-id = 'com.TickTick.task.mac'
+run = 'move-node-to-workspace 8'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iCal'
+run = 'move-node-to-workspace 8'
 
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
