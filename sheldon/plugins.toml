@@ -1,0 +1,8 @@
+shell = "zsh"
+
+[plugins.pure]
+github = "sindresorhus/pure"
+use = ["{async,pure}.zsh"]
+
+[plugins.zsh-fzf-history-search]
+github = 'joshskidmore/zsh-fzf-history-search'

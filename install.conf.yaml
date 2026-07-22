@@ -6,7 +6,8 @@
 
 - link:
     ~/.config/Brewfile: Brewfile
-    ~/.config/fish: fish
+    ~/.zshrc: zsh/zshrc
+    ~/.config/sheldon: sheldon
     ~/.config/ghostty: ghostty
     ~/.config/nvim: nvim
     ~/.config/aerospace: aerospace
@@ -18,7 +19,7 @@
     ~/.hushlogin: hushlogin
     # this file is git ignored
     # linking empty file for easy initial setup
-    ~/.custom.fish: custom.fish
+    ~/.custom.zsh: custom.zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
