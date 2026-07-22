@@ -16,7 +16,6 @@
   "title_bar": {
     "show_sign_in": false,
     "show_user_picture": false
-
   },
   "terminal": {
     "copy_on_select": true
@@ -28,11 +27,9 @@
   },
   "base_keymap": "JetBrains",
   "auto_signature_help": true,
-  "vim_mode": true,
-  "theme": "Zedokai (Filter Spectrum)",
   "ui_font_size": 14,
   "buffer_font_size": 14,
-  "buffer_font_family": "SF Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_features": {
     "liga": true
   },
@@ -43,5 +40,4 @@
     "fish": true,
     "dockerfile": true
   },
-  "format_on_save": "off"
 }
