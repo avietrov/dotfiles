@@ -72,9 +72,6 @@ require("lazy").setup({
     end,
   },
 
-  -- Fish syntax
-  { "khaveesh/vim-fish-syntax", ft = "fish" },
-
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
@@ -85,6 +82,19 @@ require("lazy").setup({
       treesitter.setup()
       treesitter.install { 'java', 'lua', 'vim', 'rust', 'python', 'latex', 'html', 'yaml', 'toml' }
     end,
+  },
+
+  -- colorscheme
+  {
+    "RRethy/base16-nvim",
+    config = function () 
+      require('base16-colorscheme').setup({
+        base00 = '#16161D', base01 = '#2c313c', base02 = '#3e4451', base03 = '#6c7891',
+        base04 = '#565c64', base05 = '#abb2bf', base06 = '#9a9bb3', base07 = '#c5c8e6',
+        base08 = '#e06c75', base09 = '#d19a66', base0A = '#e5c07b', base0B = '#98c379',
+        base0C = '#56b6c2', base0D = '#0184bc', base0E = '#c678dd', base0F = '#a06949',
+    })
+    end
   },
 
   -- File explorer
@@ -145,34 +155,4 @@ require("lazy").setup({
       })
     end,
   },
-
-  -- Diagnostics panel
-  {
-    "folke/trouble.nvim",
-    dependencies = { "kyazdani42/nvim-web-devicons" },
-    keys = {
-      { "<leader>xx", "<cmd>TroubleToggle<cr>", desc = "Toggle Trouble" },
-      { "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Workspace diagnostics" },
-      { "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "Document diagnostics" },
-      { "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", desc = "Quickfix" },
-      { "<leader>xl", "<cmd>TroubleToggle loclist<cr>", desc = "Location list" },
-    },
-    config = function()
-      require("trouble").setup({})
-    end,
-  },
-
-  -- Colorschemes
-
-  {
-  "loctvl842/monokai-pro.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("monokai-pro").setup({
-      filter ="spectrum"
-    })
-    vim.cmd.colorscheme("monokai-pro")
-  end,
-}
 })
