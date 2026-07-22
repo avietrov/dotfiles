@@ -7,6 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "theme": {
+    "mode": "system",
+    "light": "Tomorrow",
+    "dark": "Tomorrow Night"
+  },
   "format_on_save": "off",
   "project_panel": {
     "auto_fold_dirs": true,
