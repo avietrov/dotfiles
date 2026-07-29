@@ -1,5 +1,5 @@
 # zsh options
-HISTFILE="$XDG_STATE_HOME/zsh/history"
+HISTFILE="$ZDOTDIR/history"
 HISTSIZE=100000
 SAVEHIST=100000
 
